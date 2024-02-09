@@ -1,15 +1,3 @@
-# BulkSyncDeletion
- This Python script is designed to solve that problem and provide a way to delete a bunch of bulk syncs.
-
-The script takes input from a single column CSV file of Bulk Sync IDs. It iterates through each of the IDs and deletes the bulk export dependencies in Eloqua.
-
-# Setup
-Make sure you have Python installed on your system. As well, you must get the IDs of the bulk syncs you are trying to delete, and place them in a single column CSV file. Each sync ID must be in its own row.
-
-# How to Use
-Run the script from the command line and follow the prompts.
-
-
 # Eloqua Bulk Sync Deletion Script
 
 Bulk Sync dependencies can be a real pain when trying to clean up your Eloqua instance. To make matters worse, there is no way to delete these dependencies through the UI. 
@@ -33,12 +21,13 @@ This Python script allows you to delete multiple syncs in Eloqua using the Eloqu
 ## Usage
 
 1. Ensure the Eloqua account has the necessary permissions access the API and delete syncs.
-1. Ensure Python and the `requests` library are installed.
-2. Update the script with your Eloqua configuration.
-3. Open a terminal and navigate to the script's directory.
-4. Run the script by uncommenting the line `# delete_bulk_syncs(csv_file_path)` and executing the script.
+2. Ensure Python and the `requests` library are installed.
+3. Update the script with your Eloqua configuration.
+4. Open a terminal and navigate to the script's directory.
+5. Run the script by uncommenting the line `# delete_bulk_syncs(csv_file_path)` and executing the script.
 
-   Note: Before running the script, make sure to update the 'elqPod' variable with your actual pod number.
+Note: Before running the script, make sure to update the 'elqPod' variable with your actual pod number.
    
 ```bash
 python eloqua_bulk_sync_deletion.py
+```
